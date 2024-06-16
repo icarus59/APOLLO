@@ -18,8 +18,10 @@ app.get('/sound/:name', (req, res) => {
         res.json({'sound' : '먀옹'})
     } else if(name == "pig") {
         res.json({'sound' : '쿨쿨'})
+    } else if(name == "cow") {
+        res.json({'sound' : '음메'})
     } else {
-        res.json({'sound' : '알수없음'})
+        res.json({'sound' : '이해할수 없음'})
     }
 })
 
